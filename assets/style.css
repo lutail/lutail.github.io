@@ -1,0 +1,22 @@
+ul#nav {
+    margin: -6px 3px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+ul#nav > li {
+    list-style: none;
+    display: inline-block;
+    margin: 3px 5px;
+    background-color: #FFFFFF;
+    padding: 2px;
+}
+
+ul#nav > li > a {
+    color: #000000;
+    text-shadow: 1px 1px 1px black;
+}
+
+ul#nav > li > a:hover {
+    color: #DDDDDD;
+}
