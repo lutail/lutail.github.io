@@ -1,0 +1,19 @@
+<!doctype html>
+<style>
+.header{
+    -webkit-animation:rotateImg 2s linear infinite;<!--修改旋转周期-->
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+@keyframes rotateImg {
+  0% {transform : rotate(0deg);}
+  100% {transform : rotate(360deg);}
+}
+
+@-webkit-keyframes rotateImg {
+    0%{-webkit-transform : rotate(0deg);}
+  100%{-webkit-transform : rotate(360deg);}
+}
+</style>
+<img src="/assets/r1.jpg" class="header">
