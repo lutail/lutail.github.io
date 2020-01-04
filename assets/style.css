@@ -26,7 +26,7 @@ ul#nav > li > a:hover {
     margin-top: 9em;
 }
 
-.ro img{
+.ro img {
     animation: rotateImg;
     -webkit-animation: rotateImg 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }
@@ -39,4 +39,8 @@ ul#nav > li > a:hover {
 @-webkit-keyframes rotateImg {
     0%{-webkit-transform : rotate(0deg);}
   100%{-webkit-transform : rotate(360deg);}
+}
+
+img {
+    width: 100%;
 }
