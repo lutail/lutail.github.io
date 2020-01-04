@@ -54,6 +54,7 @@ img {
 
 .msg button+button {
     margin-left: 30px !important;
+    float: right;
 }
 
 .msg {
@@ -66,7 +67,8 @@ img {
     transform: translateX(-50%) translateY(-50%);
     border-radius: 10px;
 }
-
+/*
 .cls {
     float: right;
 }
+*/
