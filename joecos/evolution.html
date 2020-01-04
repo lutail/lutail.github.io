@@ -2,4 +2,9 @@
 layout: base
 tle: Joex-Evolution
 ---
-<img src="/assets/joexanywhere.gif">
+<div class="msg" id="joe">
+<button class="cls" onclick="$(&quot;#joe&quot;).css(&quot;visibility&quot;,&quot;hidden&quot;)">x</button>
+<p>Hello from Joecos:<br>How are you doing?</p>
+<button>Fine</button><button>Bad</button>
+</div>
+<img src="/assets/joexanywhere.gif" onclick="$(&quot;#joe&quot;).css(&quot;visibility&quot;,&quot;visible&quot;)">
