@@ -7,4 +7,28 @@ tle: Joecos
         background-image: url(/assets/mouse.png);
     }
 </style>
-<div style="text-align: center;"><img src="/assets/joex.png" style="width: 150px;"><br><img src="/assets/chair.png" style="width: 400px;"></div>
+<style type="text/css">
+    #div1 {width:420px; height:550px;padding:10px;border:1px solid #aaaaaa;}
+    </style>
+    <script type="text/javascript">
+    function allowDrop(ev)
+    {
+    ev.preventDefault();
+    }
+    
+    function drag(ev)
+    {
+    ev.dataTransfer.setData("Text",ev.target.id);
+    }
+    
+    function drop(ev)
+    {
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+        <p>Joex SIT</p>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="background-image: url(https://lutalli.com/assets/chair.png);left: 50%;transform: translateX(-50%);"></div>
+        <br />
+        <img id="drag1" src="https://lutalli.com/assets/joex.png" draggable="true" ondragstart="drag(event)" style="width: 150px;position: relative;left: 50%;transform: translateX(-50%);"/>"></div>
