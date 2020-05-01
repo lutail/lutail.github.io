@@ -3,10 +3,20 @@ layout: base
 tle: Tools
 ---
 <div id="json_format">
+<p>Turn shitty JSON into good JSON</p>
 Json: <input type="text" id='json'><button onclick="json_format()">Format</button>
 </div>
 <script>
     function json_format(){
-        alert("good")
+        if(document.querySelector("#json").value){
+            try {
+                document.querySelector("#json").value = JSON.stringify(JSON.parse(document.querySelector("#json").value))
+            } catch  {
+                alert("Data Error\nCheck.")
+            }
+        }
+        else {
+            alert("No JSON")
+        }
     }
 </script>
