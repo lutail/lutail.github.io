@@ -6,6 +6,11 @@ tle: Tools
 <p>Turn shitty JSON into good JSON</p>
 Json: <input type="text" id='json'><button onclick="json_format()">Format</button>
 </div>
+<hr>
+<div id="url_format">
+    <p>Turn shitty URL into good URL</p>
+    Url: <input type="text" id='url'><button onclick="url_format()">Format</button>
+    </div>
 <script>
     function json_format(){
         if(document.querySelector("#json").value){
@@ -17,6 +22,14 @@ Json: <input type="text" id='json'><button onclick="json_format()">Format</butto
         }
         else {
             alert("No JSON")
+        }
+    }
+    function url_format(){
+        if(document.querySelector("#url").value.indexOf("\\") == -1){
+            document.querySelector("#url").value = document.querySelector("#url").value.replace("/","\\/")
+        }
+        else {
+            document.querySelector("#url").value = document.querySelector("#url").value.replace("\\/", "/")
         }
     }
 </script>
